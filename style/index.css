@@ -11,3 +11,7 @@
     -webkit-touch-callout: none;
     -webkit-font-smoothing: antialiased;
 }
+
+.input {
+    background: url(../img/search.png) no-repeat center left;
+}
