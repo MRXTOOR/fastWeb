@@ -77,6 +77,16 @@
 .wthit-adaptiv-box {
     background-color: white;
     border-radius: 30px;
+    user-select: none;
+}
+
+@keyframes show {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 960px) {
@@ -124,8 +134,16 @@
     }
     nav {
         display: none;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background-color: rgb(250, 98, 104);
+        user-select: none;
     }
     #burger:checked+label+nav {
         display: block;
+    }
+    #burger:checked+h1 {
+        animation: show .5s ease;
     }
 }
